@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/fa/css/all.css">
+    
+
+    <title>Arkademy Bootcamp</title>
+  </head>
+  <body>
+      
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow bg-white rounded">
+        <a class="navbar-brand" href="#" >
+            <img src="assets/img/logo-arka.png" width="80" class="d-inline-block align-top" alt="">
+            
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <span class="navbar-brand mb-0 h1 font-weight-bold"><span style="color: #ff8fb2">ARKADEMY</span> COFFEE SHOP</span>
+            
+            <ul class="navbar-nav mr-auto">
+            </ul>
+
+            <span class="navbar-text">
+                <button type="button" class="btn btn-primary custom-btn shadow rounded" style="width: 8rem;" data-toggle="modal" data-target="#addModal">
+                ADD
+                </button>
+            </span>
+        </div>
+      
+    </nav>
+    
+    <div class="row h-100 justify-content-center align-items-center"> 
+        <div class="col-md-8"> 
+            <div class="card shadow rounded" style="margin-top:80px; margin-bottom:40px">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="text-center">
+                            <tr>
+                                <th style="width: 5%;">No</th>
+                                <th>Cashier</th>
+                                <th>Product</th>
+                                <th style="width: 10%;">Category</th>
+                                <th style="width: 15%;">Price</th>
+                                <th style="width: 20%;">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class=" text-center">1</td>
+                                <td >Pevita Pearce</td>
+                                <td >Latte</td>
+                                <td >Drink</td>
+                                <td >Rp. 10.000</td>
+                                <td class=" text-center">
+                                    <a href="#editModal" data-toggle="modal" data-target="#editModal" style="color: rgb(142, 218, 28);" class="font-weight-bold">Edit</a> | <a href="#delModal" data-toggle="modal" data-target="#delModal" style="color: red;" class="font-weight-bold">Hapus</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=" text-center">2</td>
+                                <td >Raisa Andriana</td>
+                                <td >Cake</td>
+                                <td >Food</td>
+                                <td >Rp. 15.000</td>
+                                <td class=" text-center">
+                                    <a href="#editModal" data-toggle="modal" data-target="#editModal"  style="color: rgb(142, 218, 28);" class="font-weight-bold">Edit</a> | <a href="#delModal" data-toggle="modal" data-target="#delModal" style="color: red;" class="font-weight-bold">Hapus</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=" text-center">3</td>
+                                <td >Raisa Andriana</td>
+                                <td >Fried Rice</td>
+                                <td >Food</td>
+                                <td >Rp. 30.000</td>
+                                <td class=" text-center">
+                                    <a href="#editModal" data-toggle="modal" data-target="#editModal"  style="color: rgb(142, 218, 28);" class="font-weight-bold">Edit</a> | <a href="#delModal" data-toggle="modal" data-target="#delModal" style="color: red;" class="font-weight-bold">Hapus</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=" text-center">4</td>
+                                <td >Pevita Pearce</td>
+                                <td >Gudeg</td>
+                                <td >Food</td>
+                                <td >Rp. 35.000</td>
+                                <td class=" text-center">
+                                    <a href="#editModal" data-toggle="modal" data-target="#editModal"  style="color: rgb(142, 218, 28);" class="font-weight-bold">Edit</a> | <a href="#delModal" data-toggle="modal" data-target="#delModal" style="color: red;" class="font-weight-bold">Hapus</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=" text-center">5</td>
+                                <td >Joko Purwodhi</td>
+                                <td >Ice Tea</td>
+                                <td >Drink</td>
+                                <td >Rp. 55.000</td>
+                                <td class=" text-center">
+                                    <a href="#editModal" data-toggle="modal" data-target="#editModal"  style="color: rgb(142, 218, 28);" class="font-weight-bold">Edit</a> | <a href="#delModal" data-toggle="modal" data-target="#delModal" style="color: red;" class="font-weight-bold">Hapus</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=" text-center">6</td>
+                                <td >Vildan Romli Afriansyah Putra</td>
+                                <td >Cake</td>
+                                <td >Food</td>
+                                <td >Rp. 50.000</td>
+                                <td class=" text-center">
+                                    <a href="#editModal" data-toggle="modal" data-target="#editModal"  style="color: rgb(142, 218, 28);" class="font-weight-bold">Edit</a> | <a href="#delModal" data-toggle="modal" data-target="#delModal" style="color: red;" class="font-weight-bold">Hapus</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>    
+    </div>           
+
+    <!-- Modal Del -->
+    <div class="modal" id="delModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div style="text-align: center;">
+                    <label for="" style="margin-top: 30px; font-size: 2rem;">Data Raisa Andriani ID <span style="color: #ff8fb2">#1</span></label>
+                    <p><span style="font-size: 3em; color: green; " style="text-align: center;">
+                            <i class="far fa-check-circle fa-2x "></i>
+                    </span></p>
+                    <label for="" style="font-size: 2rem; margin-bottom: 30px;">Berhasil Dihapus!</label>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Modal Add -->
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <form action="" method="">
+                                <div class="form-group">
+                                    <select name="cashier" id="cashier" class="form-control">
+                                        <option value="">-Select Cashier-</option>
+                                        <option value="1">Pevita Pearce</option>
+                                        <option value="2">Raisa Andriana</option>
+                                        <option value="3">Joko Purwodhi</option>
+                                        <option value="4">Vildan Romli Afriansyah Putra</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select name="category" id="category" class="form-control">
+                                        <option value="">-Select Category-</option>
+                                        <option value="1">Food</option>
+                                        <option value="2">Drink</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="product" id="product" placeholder="Product" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="price" id="price" placeholder="Price" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary custom-btn">ADD</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Modal Edit -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <form action="" method="">
+                                <div class="form-group">
+                                    <select name="cashier" id="cashier" class="form-control">
+                                        <option value="1">Pevita Pearce</option>
+                                        <option value="2" selected>Raisa Andriana</option>
+                                        <option value="3">Joko Purwodhi</option>
+                                        <option value="4">Vildan Romli Afriansyah Putra</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select name="category" id="category" class="form-control">
+                                        <option value="1">Food</option>
+                                        <option value="2" selected>Drink</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="product" id="product" value="Ice Tea" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="price" id="price" value="Rp. 10.000" class="form-control">
+                                </div>
+                                <div class="form-group ">
+                                    <button type="button" class="btn btn-primary custom-btn float-right">EDIT</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
